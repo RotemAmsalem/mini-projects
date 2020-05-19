@@ -1,0 +1,146 @@
+eh51195
+324502145
+Elia Hene
+
+ra260296
+207596297
+Rotem Amsalem
+
+==============================================================================
+I discussed the exercise with:
+==============================================================================
+Yarden Natovitch
+Daniel Lamberger
+
+==============================================================================
+README for ex12: Four in a Row.
+==============================================================================
+
+http://www.science.smith.edu/dftwiki/index.php/File:TkInterColorCharts.png
+
+https://docs.python.org/3/library/tk.html
+
+==============================================================================
+Description:
+==============================================================================
+
+Class Game :
+A class representing the "internal logic" of the board state, and will allow to
+perform moves on the board, when the board size is 6 row and 7 column. A player
+wins when 4 discs he has inserted are a row, column or diagonal on the board.
+
+1.'__init__' -  A constructor for the board of the game.
+
+2.'make_move' - Updating the board dictionary depending on the column player's
+selection, and the row corresponding to the selected column, which the disc is
+clipped.
+
+3. 'get_current_player' - return the current player at a given moment.
+
+4. 'get_player_at' - return which disc is in the selected location.
+
+5. 'check_col' - this function checks if there are four disc from the same
+color in consecutively at any one of the columns. It returns the winner, if
+there is one, or None otherwise and a list of the locations of the winning
+discs as a tuple.
+
+6. 'check_row' - this function checks if there are four disc from the same
+color in consecutively at any one of the rows. It returns the winner, if there
+is one, or None otherwise and a list of the locations of the winning discs as a
+tuple.
+
+7. 'check_diagonals' - this function checks if there are four disc from the
+same color in consecutively at either one of the diagonals. It returns the
+winner if there is one and None otherwise and a list of the locations of the
+winning discs.
+
+8. 'get_winner' - returns the situation won: the winner in case of victory, and
+draw in case of a draw (if there is no winner neither at the rows or columns
+nor at the diagonals).
+
+
+Class AI :
+this class responsible about the computer's moves.
+
+1. 'find_legal_move' - this function place the disc at a column it founds as
+possible. If there are no such columns, the function raise an exception.
+It receives a param g: an object from the Game class that describe the logic of
+the game, a param func: a 2nd order function that activating at the col the
+function founds and a param timeout.It returns a legal move, means a col the
+disc would be placed at as a number between 0 to 6 that represent a column that
+is not full.
+
+
+Class GUI :
+A class representing the game Graphical User Interface including all the
+graphics of the game and the visual parts, including popping messages, and
+painting ovals
+
+1.  '__init__' - a constructor of the graphics of the game. It receives a param
+player: either human of computer, a param port: a number between 1000 and
+65535, a param server: a boolean value that is True for the server and False
+for the client and a param ip: None for the server and an ip for the client.
+
+2. 'is_human' - this function update the player to be human of computer
+considering what was given at the args line and returns True if the player is
+human and False if the player is ai.
+
+3. 'show_message' - This is a method used to show messages in the game. It
+receives a param title: The title of the message box, type title: str
+and a param msg: The message to show in the message box, type msg: str
+
+4. 'end_game' - This ends the current game.
+
+5. 'paint_oval' - this function painting the ovals at the color of the current
+player. It receives a param col: get the col that the player chose to paint, a
+param color: the color of the player(each player has his own color. It returns
+an oval at the size of all the ovals and at the color given.
+
+6. 'paint_winner_oval' - this function painting a winning oval with a gold
+outline. It receives param row: the row of the winning oval and a param col:
+the col of the winning oval and returns a gold outline for a winning oval.
+
+7. 'mark_win' - this function activates the paint_winner_oval(that marking the
+ovals with a gold outline) at each one of the winning ovals.
+
+8. 'win_step' - this function mark the winner discs, shows the winner the
+message that he won, send message to the other player that he lose and ends the
+game.
+
+9. 'lose_step' - this function mark the winner discs, shows the loser the
+message that he lose and ends the game.
+
+10. 'update_game' - this function checks if the player is the server of the
+client and than checks if it is his turn. If so, it activate the paint_oval
+function with the col given and with the player color. It receives a param col:
+a col that the player chose to place his disc at and returns an painted oval at
+the color of the player and message at the end of the game(win of draw)
+
+11. 'create_board' - this function creates the screen-  the visual board.
+including its labels and empty ovals.
+
+12. 'handle_message' - this function receive a message from the other player
+that says where he put his disc and if the game ends it shows the matching
+message. It receives a param text: the string of the location that the player
+want's to put his disc at and returns the painting oval at the other player's
+screen and if the game ends it shows the matching message(win, lose or draw).
+
+13. 'run_game' - this function runs the game. It creates the buttons of the
+columns and the quit button.This function returns the updating screen, with the
+buttons so pressing on them will paint the wanted disc.
+
+
+The four_in_a_row file:
+
+1. 'check_argv' - this function returns True if the parameters are correct and
+False otherwise.
+
+2. 'main' - this function creates two synchronized screens of the game at once.
+one of the server and the other of the client.
+
+============================================================
+=  SPECIAL COMMENTS:  =
+============================================================
+there are few function that are more than 30 lines but I would like to pay your
+attention to the fact that they are this long with the documentation but the
+code lines thyself are less than 30 lines.
