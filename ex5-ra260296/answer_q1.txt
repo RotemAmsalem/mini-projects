@@ -1,0 +1,9 @@
+Q1: Describe the effect of increasing the residual blocks on its performance for each task, both
+    quantitatively in terms of the plot you got and qualitatively in terms of the differences in the
+    image outputs of each model
+
+A1: We can see that as the bigger the number of residual blocks is the smaller the size of error is. Furthermore, by
+    increasing the number of residual blocks I noticed that the restored image looks more alike the original image.
+
+
+

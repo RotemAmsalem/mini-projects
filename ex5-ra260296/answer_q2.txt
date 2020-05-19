@@ -1,0 +1,12 @@
+Q2: Suggest how to use the workflow you have implemented in this assignment to train a network that
+    could be used for super-resolution. A full answer consists of a description of the corruption
+    function, and how to properly use the restore_image() function for this task. For this context only,
+    you could optionally add additional operations before calling to restore_image().
+
+
+A2: First I'll describe the implementation of the new corruption function. This function should decrease the resolution.
+    In order to do so, I'll reduce the image, activate the corruption function on the reduced image and than re-expand it
+    into its original size. Now, I'll use the restore_image() (I won't change it).
+
+
+
