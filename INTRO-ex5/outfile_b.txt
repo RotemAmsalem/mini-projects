@@ -1,0 +1,12 @@
+blue,2
+cat,1
+dog,1
+five,1
+gum,1
+he,1
+move,1
+one,1
+raw,1
+she,1
+six,1
+two,1

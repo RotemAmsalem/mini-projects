@@ -1,0 +1,11 @@
+blue,1
+bye,1
+move,1
+nine,1
+one,1
+pole,1
+red,1
+six,1
+son,1
+ten,1
+two,1

@@ -1,0 +1,97 @@
+ra260296
+207596297
+Rotem Amsalem
+
+eh51195
+324502145
+Elia Hene
+
+I discussed this exercise with:
+
+
+===================================
+=  README for ex5: =
+===================================
+
+https://docs.python.org/2/library/os.path.html
+https://www.tutorialspoint.com/python/string_isalpha.htm
+https://www.tutorialspoint.com/python/python_dictionary.htm
+
+============================================================
+=  Description:  =
+============================================================
+Part A:
+
+The crosswords in this part are 2d matrices.
+
+The check_args function checks the arguments which were given. It checks
+whether the number of arguments is valid or not only if it does, the function
+starts to check the arguments and printed the matching error messages according
+to the instructions.
+
+The load_words function loading the words from an external file and put it into
+a list of words.
+
+THE load_matrix function loading the matrix from an external file and put it
+into a list. This list's members are other lists that are the rows of the
+matrix and each of those lists (the rows) contains the members of the columns
+of the matrix at the matched row.
+
+The concat_list function receives a list of strings, and return the
+concatenation of the list's parts as one string.
+
+The check_directions function receives two lists. The first one is matrix list
+and the second is an empty list which in the end will contain the words
+according to each searching words direction.
+
+The function of the directions (8 functions) receives the matrix list and
+returns the words that are found in the matching direction.
+
+The match_direction function receives a direction of searching as a letter or a
+combination of few letters and match this direction to the function which
+searching in the matching direction and returns the founded word and how many
+time they were found as a dictionary when the word is the key and the number of
+times it was found is the value.
+
+The load_output function exports the words which were founded, according to the
+direction which was entered as the last argument,to an external output file
+which its location is the sys.argv[3].
+
+The main function checks the arguments and only if they are all valid it runs
+the code.
+
+Part B:
+The crosswords in this part are 2d matrices.
+
+The check args function do the same as in part A.
+
+The load_3d_words function loading the words from an external file and put it
+into a list of words.
+
+The load_3d_matrix function loading the matrix from an external file and put it
+into a list that list contains other lists that contain other lists.
+
+The depth_matrix function receives matrix and returns the number of depth
+matrices.
+
+The a_direction function returns all the 2d matrices which receives from the a
+direction (depth matrices).
+
+The b_direction function returns all the 2d matrices which receives from the b
+direction (length matrices).
+
+The c_direction function returns all the 2d matrices which receives from the c
+direction (width matrices).
+
+The direction_to_matrix function receives a direction of searching as a letter
+or a combination of few letters and match this direction to the function which
+searching in the matching direction and returns the founded word and how many
+time they were found as a dictionary when the word is the key and the number
+of times it was found is the value.
+
+The load_3d_output function exports the words which were founded, according to
+the direction which was entered as the last argument,to an external output file
+ which its location is the sys.argv[3].
+
+ The main function checks the arguments and only if they are all valid it
+ runs the code.

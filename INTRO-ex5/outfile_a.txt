@@ -1,0 +1,12 @@
+bye,1
+cat,1
+dog,1
+he,1
+nine,1
+raw,1
+red,1
+she,1
+shoe,1
+son,1
+ten,1
+toe,1

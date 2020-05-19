@@ -1,0 +1,4 @@
+c,a,t,c,a,t
+c,a,t,c,a,t
+a,t,t,a,a,a
+t,a,a,t,a,a
