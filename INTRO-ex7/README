@@ -1,0 +1,70 @@
+ra260296
+207596297
+Rotem Amsalem
+
+
+I discussed this exercise with:
+Daniel Lemberger
+Elia Hene
+
+
+===================================
+=  README for ex7: =
+===================================
+
+https://he.wikipedia.org/wiki/מגדלי_האנוי
+
+============================================================
+=  Description:  =
+============================================================
+PART A:
+
+1.The print_to_n's function print the numbers from 1 to n.
+2.The print_reversed's function print the numbers from n to 1.
+3.The has_divisor_smaller_than's function function checks if the number n.
+ has smaller divisor than i.
+4.The is_prime's function checks if n is a prime number.
+5.The divisors_list's function return all the divisors of n from i till n.
+6.The divisors's function returns all the divisors of n from 1 till n.
+7.The factorial's function return the factorial of n.
+8.The exp_n_x's function returns the exponential sum, using the
+previous functions.
+
+
+PART B:
+
+9.The play_hanoi's function implement the hanoi game. It moves all the discs
+from the source rod to the destination rod using the temporary rod.
+10.The print_binary_sequences_with_prefix's function prints all the possible
+combinations of 1 and 0 at n length that begins with prefix.
+11.The print_binary_sequences's function prints all the possible combinations
+of 1 and 0 at n length.
+12.The print_sequences_with_prefix's this function prints all the possible
+combinations of characters from the char_list at n length that begins with
+prefix.
+13.The print_sequences's function prints all the possible combinations of
+characters from the char_list at n length.
+14.The print_no_repetition_sequences_with_prefix's function prints all the
+possible combinations of characters from the char_list at n length that begins
+with prefix without repeating a char more than one time.
+15.The print_no_repetition_sequences's function prints all the possible.
+combinations of characters from the char_list at n length without repeating a
+char more than one time.
+16.The no_repetition_sequences_list_with_prefix's function returns a list of
+all the possible combinations of characters from the char_list at n length that
+begins with prefix without repeating a char more than one time.
+17.The no_repetition_sequences_list's function returns a list of all the
+possible combinations of characters from the char_list at n length without
+repeating a char more than one time.
+
+
+
+
+
+
+
+
+
+
+
+
