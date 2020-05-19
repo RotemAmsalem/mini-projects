@@ -1,0 +1,6 @@
+Q2: What happens (and why this happens) to the result blending from section 4 image when:
+    Blending is performed with different image filters (filter_size_im = 1,3,5,7...).
+
+A2: changing the size of the filter will determine rather we want to preform a high filter at each
+    level of the pyramid or low one. The higher the filter size is the higher the frequencies are
+    and therefore we will receive an image that includes the less noticeable details.

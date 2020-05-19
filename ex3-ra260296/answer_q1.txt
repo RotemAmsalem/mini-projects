@@ -1,0 +1,7 @@
+Q1: What does it mean to multiply each level in a different value? What do we try to control on?
+
+A1: By multiply each level in a different value we are giving each frequency a value that the higher
+    it is the higher the frequency will be. so that the first frequency at the pyramid is the
+    highest frequency and the list is sorted at descending order.
+    the higher frequencies are for cases that we want to focus at the small details and the lower
+    frequencies are for cases we want the noticeable details and less from the little details.
